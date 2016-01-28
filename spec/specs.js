@@ -15,9 +15,14 @@ describe ('HangMan', function() {
     var testHangMan = new HangMan("labrador");
     expect(testHangMan.wordLength()).to.equal(8);
   });
+  it("will create a placeholder array equal to the length of randomWord", function() {
+    var testHangMan = new HangMan("labrador");
+    expect(testHangMan.placeHolderArray()).to.eql(["_", "_", "_", "_", "_", "_", "_", "_"]);
+  });
 });
 //   it("adds the price method to the ticket", function() {
 //     var testTicket = new Ticket("Star Wars", 7, 24);
 //     expect(testTicket.price()).to.equal(9);
 //   });
 // });
+//

@@ -21,6 +21,15 @@ HangMan.prototype.wordLength = function() {
   return wordLength;
 }
 
+HangMan.prototype.placeHolderArray = function() {
+  var wordLength = this.word.length;
+  var placeHolderArray = []
+  for (var i = 0; i < wordLength; i++) {
+    placeHolderArray = placeHolderArray.concat("_");
+  }
+  this.word = placeHolderArray;
+  return placeHolderArray;
+}
 
 // Ticket.prototype.price = function() {
 //   var price = 8;
